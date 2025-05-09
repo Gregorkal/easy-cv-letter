@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wgraj CV – easy-cv&letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo easy-cv&letter">
+  <h1>Wgraj swoje CV</h1>
+</header>
+
+<nav>
+  <a href="index.html">Strona główna</a>
+  <a href="upload.html">Wgraj CV</a>
+  <a href="register.html">Załóż konto</a>
+  <a href="contact.html">Kontakt</a>
+</nav>
+
+<main>
+  <h2>Załaduj dokument</h2>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+    <button type="submit">Wyślij CV</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 easy-cv&letter
+</footer>
+
+</body>
+</html>

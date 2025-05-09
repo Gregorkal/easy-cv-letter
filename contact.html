@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – easy-cv&letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo easy-cv&letter">
+  <h1>Kontakt</h1>
+</header>
+
+<nav>
+  <a href="index.html">Strona główna</a>
+  <a href="upload.html">Wgraj CV</a>
+  <a href="register.html">Załóż konto</a>
+  <a href="contact.html">Kontakt</a>
+</nav>
+
+<main>
+  <h2>Skontaktuj się z nami</h2>
+  <p>Email: pomoc@easy-cvletter.pl</p>
+  <p>Odpowiadamy w ciągu 24 godzin.</p>
+
+  <form action="/send-message" method="POST">
+    <input type="text" name="name" placeholder="Twoje imię" required>
+    <input type="email" name="email" placeholder="Twój e-mail" required>
+    <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
+    <button type="submit">Wyślij wiadomość</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 easy-cv&letter
+</footer>
+
+</body>
+</html>
