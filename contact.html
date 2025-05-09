@@ -2,39 +2,48 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Skontaktuj się z nami – easy-cv&letter. Odpowiadamy w ciągu 24 godzin.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Kontakt – easy-cv&letter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
 <header>
   <img src="logo.png" alt="Logo easy-cv&letter">
   <h1>Kontakt</h1>
 </header>
-
+  
 <nav>
-  <a href="index.html">Strona główna</a>
-  <a href="upload.html">Wgraj CV</a>
-  <a href="register.html">Załóż konto</a>
-  <a href="contact.html">Kontakt</a>
+  <a href="index.html" aria-label="Przejdź do strony głównej">Strona główna</a>
+  <a href="upload.html" aria-label="Wgraj swoje CV">Wgraj CV</a>
+  <a href="register.html" aria-label="Załóż nowe konto">Załóż konto</a>
+  <a href="contact.html" aria-label="Skontaktuj się z nami">Kontakt</a>
 </nav>
-
+  
 <main>
   <h2>Skontaktuj się z nami</h2>
-  <p>Email: pomoc@easy-cvletter.pl</p>
+  <p>Email: <a href="mailto:pomoc@easy-cvletter.pl">pomoc@easy-cvletter.pl</a></p>
   <p>Odpowiadamy w ciągu 24 godzin.</p>
-
-  <form action="/send-message" method="POST">
-    <input type="text" name="name" placeholder="Twoje imię" required>
-    <input type="email" name="email" placeholder="Twój e-mail" required>
-    <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
+  
+  <form action="https://yourdomain.com/send-message" method="POST">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Twój e-mail" required>
+    
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Wiadomość" required></textarea>
+    
     <button type="submit">Wyślij wiadomość</button>
   </form>
 </main>
-
+  
 <footer>
-  &copy; 2025 easy-cv&letter
+  &copy; 2025 easy-cv&letter. Wszelkie prawa zastrzeżone.
 </footer>
-
+  
 </body>
 </html>
